@@ -1,0 +1,69 @@
+# Svars data selection
+# Format:
+# # of svars: N
+# ["index1 of selection" "index2 of selection" ... "indexN of selection"]
+# startTime (always 0), time_step, endtime
+# Compute nodal stress or not. Yes: 1, No: 0
+# Svars file in binary format or not. Yes: 1, No: 0
+# if number of svars is 0, It will only create empty folders without any information.
+
+# Please DO select 1 2 3 in the svars selection, if you want to compute nodal stress
+
+# Please refer below for the svars index
+# 1: 'Normal N stress', 
+# 2: 'Shear M stress', 
+# 3: 'Shear L stress', 
+# 4: 'Normal N strain', 
+# 5: 'Shear M strain', 
+# 6: 'Shear L strain', 
+# 7: 'Max normal N strain',
+# 8: 'Max shear T strain', 
+# 9: 'Tensile strength', 
+# 10: 'Post-peak slope in tension', 
+# 11: 'Shear L crack opening', 
+# 12: 'Minimum Normal Strain',
+# 13: 'Normal N crack opening', 
+# 14: 'Shear M crack opening', 
+# 15: 'Total crack opening', 
+# 16: 'Volumetric strain', 
+# 17: 'Dissipated energy density rate',
+# 18: 'Dissipated energy density', 
+# 19: 'Dissipated energy density rate in tension', 
+# 20: 'Dissipated energy density in tension',
+# 21: 'Total Normal Imposed Strain',
+# 22: 'Imposed Normal Strain Increment',
+# 23: 'Imposed M Shear Strain Increment',
+# 24: 'Imposed L Shear Strain Increment',
+# 25: 'Imposed Volumetric Strain',
+# 26: 'Imposed Volumetric Strain Increment',
+# 27: 'Hydration degree',
+# 28: 'Silica fume degree',
+# 29: 'Total reaction degree',
+# 30: 'Aging degree',
+# 31: 'thermal degradation degree for E0',
+# 32: 'thermal degradation degree for ft',
+# 33: 'thermal degradation degree for fs not fr',
+# 34: 'thermal degradation degree for fc',
+# 35: 'thermal degradation degree for sf0',
+# 36: 'Imposed Normal Stress',
+# 37: 'Imposed M Shear Stress',
+# 38: 'Imposed L Shear Stress',
+# 39: 'Humidity',
+# 40: 'HumidityRate',
+# 41: 'Temperature',
+# 42: 'TemperatureRate',
+# 43: 'Pressure',
+# 44: 'PressureRate',
+# 45: 'Creep Microprestress',
+# 46: 'dGammaN for Kelvin unit 1',
+# 45+nKelvinUnit: 'dGammaN for Kelvin unit n',
+# 45+nKelvinUnit+1: 'dGammaM for Kelvin unit 1',
+# 45+2*nKelvinUnit: 'dGammaM for Kelvin unit n',
+# 45+2*nKelvinUnit+1: 'dGammaL for Kelvin unit 1',
+# 45+3*nKelvinUnit: 'dGammaL for Kelvin unit n'
+
+Number of svars: 5
+1 15 16 36 43
+0 2.0e-4 1.0e-2
+0
+0
